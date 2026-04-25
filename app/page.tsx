@@ -115,7 +115,7 @@ function Lnk({ href, children, external }: { href: string; children: React.React
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 16, fontWeight: 600, color: "#a084cc", marginBottom: 12 }}>
+    <p style={{ fontFamily: SERIF, fontSize: 16, fontWeight: 600, color: "#a084cc", marginBottom: 12 }}>
       {children}
     </p>
   );
@@ -173,7 +173,7 @@ export default function Home() {
 
           {/* Incoming */}
           <section style={{ marginBottom: 36 }}>
-            <SectionLabel>incoming:</SectionLabel>
+            <SectionLabel>incoming</SectionLabel>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 7 }}>
               {INCOMING.map((e, i) => (
                 <li key={i} style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
@@ -191,7 +191,7 @@ export default function Home() {
 
           {/* Experience */}
           <section style={{ marginBottom: 36 }}>
-            <SectionLabel>experience:</SectionLabel>
+            <SectionLabel>experience</SectionLabel>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 7 }}>
               {EXPERIENCE.map((e, i) => (
                 <li key={i} style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
@@ -212,7 +212,7 @@ export default function Home() {
 
           {/* Projects */}
           <section id="projects" style={{ marginBottom: 32 }}>
-            <SectionLabel>projects:</SectionLabel>
+            <SectionLabel>projects</SectionLabel>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 7 }}>
               {PROJECTS.map(({ name, href, desc, stat }) => (
                 <li key={name} style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
