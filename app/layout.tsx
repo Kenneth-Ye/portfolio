@@ -12,7 +12,6 @@ const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
-  weight: ["300", "400", "500"],
 });
 
 const jetBrainsMono = JetBrains_Mono({

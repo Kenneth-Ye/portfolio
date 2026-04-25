@@ -115,7 +115,7 @@ function Lnk({ href, children, external }: { href: string; children: React.React
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 15, color: "#a084cc", marginBottom: 12 }}>
+    <p style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 16, fontWeight: 600, color: "#a084cc", marginBottom: 12 }}>
       {children}
     </p>
   );
@@ -135,7 +135,7 @@ export default function Home() {
         <div style={{ width: 560, maxWidth: "calc(100vw - 48px)", margin: "0 auto", paddingTop: 80, paddingBottom: 80, fontFamily: SANS }}>
 
           {/* Nav */}
-          <nav style={{ display: "flex", gap: 20, marginBottom: 32 }}>
+          <nav style={{ display: "flex", gap: 20, marginBottom: 20 }}>
             {[
               { label: "About", href: "#",      active: true  },
               { label: "Blog",  href: "/blog",  active: false },
@@ -211,7 +211,7 @@ export default function Home() {
           </section>
 
           {/* Projects */}
-          <section id="projects" style={{ marginBottom: 64 }}>
+          <section id="projects" style={{ marginBottom: 32 }}>
             <SectionLabel>projects:</SectionLabel>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 7 }}>
               {PROJECTS.map(({ name, href, desc, stat }) => (

@@ -10,6 +10,8 @@
 
 body {
   background: #0e0e0e;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
